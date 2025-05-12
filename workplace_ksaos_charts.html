@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Workplace KSAOs Metrics Charts</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4a6fa5;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #2c4c7c;
+            margin-top: 40px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .chart-container {
+            margin: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            background-color: white;
+            padding: 15px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .pro-self {
+            border-left: 4px solid #6a98d0;
+            padding-left: 15px;
+        }
+        .pro-peers {
+            border-left: 4px solid #8bc34a;
+            padding-left: 15px;
+        }
+        .pro-customers {
+            border-left: 4px solid #ff9800;
+            padding-left: 15px;
+        }
+        .pro-job {
+            border-left: 4px solid #f44336;
+            padding-left: 15px;
+        }
+        .print-button {
+            background-color: #4a6fa5;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px 0;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        @media print {
+            .print-button {
+                display: none;
+            }
+            img {
+                max-width: 100%;
+                page-break-inside: avoid;
+            }
+            h2 {
+                page-break-before: always;
+            }
+            h2:first-of-type {
+                page-break-before: avoid;
+            }
+            .chart-container {
+                box-shadow: none;
+                border: 1px solid #eee;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Workplace KSAOs Metrics Charts</h1>
+    <button class="print-button" onclick="window.print()">Print/Save as PDF</button>
+<h2 class="pro-self">pro-self</h2>
+<div class="chart-container">
+    <img src="pro-self_SA_metrics.png" alt="pro-self SA Metrics">
+</div>
+<div class="chart-container">
+    <img src="pro-self_O_metrics.png" alt="pro-self O Metrics">
+</div>
+<h2 class="pro-peers">pro-peers</h2>
+<div class="chart-container">
+    <img src="pro-peers_SA_metrics.png" alt="pro-peers SA Metrics">
+</div>
+<div class="chart-container">
+    <img src="pro-peers_O_metrics.png" alt="pro-peers O Metrics">
+</div>
+<h2 class="pro-customers">pro-customers</h2>
+<div class="chart-container">
+    <img src="pro-customers_SA_metrics.png" alt="pro-customers SA Metrics">
+</div>
+<div class="chart-container">
+    <img src="pro-customers_O_metrics.png" alt="pro-customers O Metrics">
+</div>
+<h2 class="pro-job">pro-job</h2>
+<div class="chart-container">
+    <img src="pro-job_SA_metrics.png" alt="pro-job SA Metrics">
+</div>
+<div class="chart-container">
+    <img src="pro-job_K_metrics.png" alt="pro-job K Metrics">
+</div>
+
+</body>
+</html>
